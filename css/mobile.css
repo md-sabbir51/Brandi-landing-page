@@ -1,0 +1,217 @@
+/* Navbar start */
+.main-nav {
+    height: 80vh;
+}
+
+.owl-1 .owl-carousel .owl-item img {
+    height: 80vh !important;
+}
+
+/* Brandi-logo */
+
+/* .logo-2 {
+    align-items: start;
+} */
+
+.main-nav .brandi-logo .logo-2 .para-1 {
+    margin-left: 0;
+    padding: 0 !important;
+}
+
+.logo-3 {
+    display: none;
+}
+/* Brandi-logo end */
+/* Meet brandi */
+/* Features start */
+.main-features .container .f-part-2 .custom-col a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.main-features .container .f-part-2 .custom-col {
+    text-align: center;
+}
+
+.main-features .container .f-part-2 .custom-col p {
+    margin-left: 0;
+}
+/*Features end*/
+/* Work start */
+.main-works .para-1 p {
+    width: 100%;
+}
+
+.main-works .li a {
+    font-size: 15px;
+    padding: 5px 15px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: 300px; */
+    grid-gap: 20px;
+}
+
+
+/* Meet start */
+.main-meet {
+    top: 35% !important;
+}
+
+#meet-team p {
+    width: 100%;
+    margin: none;
+}
+
+.main-meet .container .meet p {
+    font-size: 2rem;
+}
+.main-meet .container .meet h1 {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+/* meet img-section */
+.meet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.meet-grid .meet-item .meet-image {
+    width: 100%;
+    height: 100% !important;
+}
+
+.meet-grid .meet-item .meet-image img {
+    width: 100%;
+    height: 100% !important;
+}
+
+.meet-grid .meet-item .meet-grid-hover i {
+    padding: 7px;
+    margin-top: 3rem;
+    font-size: 80%;
+}
+
+.meet-grid .meet-item .meet-grid-hover h5, .meet-grid .meet-item .meet-grid-hover p {
+    font-size: 10px;
+    padding: 0 30px;
+}
+
+/* meet img-section end */
+/* Meet start */
+/* Some Fun Facts */
+.main-fun {
+    height: 90vh;
+}
+
+#fun-2 {
+    margin-top: 2rem;
+}
+#fun-2 .fun-col i {
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+#fun-2 .fun-col span {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+#fun-2 .fun-col p {
+    font-size: 12px;
+    margin-top: .5rem;
+}
+#fun-2 .fun-col img {
+    width: 25%;
+    padding: 1rem;
+}
+/* creative start */
+.main-meet .container .creative p {
+    font-size: 1.5rem;
+}
+.main-meet .container .creative h3 {
+    font-size: 1.5rem;
+}
+/* creative end */
+/* we start */
+.main-meet .container .we {
+    width: 100%;
+}
+.main-meet .container .we p {
+    font-size: 12px;
+}
+/* we end */
+/* Works start */
+.main-works .para-1 p {
+    /* padding: 2rem 10rem; */
+    width: 100%;
+    margin: 0;
+    padding-top: 2rem;
+
+}
+/* Works end */
+/* Discuss-part-2 start */
+.discuss-part-2 h5 {
+    text-align: center;
+}
+
+.discuss-part-2 p {
+    width: 70%;
+    margin: auto;
+}
+
+.discuss-part-2 h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.discuss-part-2 input {
+    width: 100%;
+}
+
+.discuss-part-2 .discuss-2-icon {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.discuss-part-2 .discuss-2-icon i {
+    display: inline-block;
+    padding: 10px;
+}
+/* Discuss-part-2 end */
+/* Footer srat */
+/* Footer-first-col */
+.main-footer {
+    height: 115vh;
+}
+/* Footer-first-col end */
+/* Footer-second-col */
+.main-footer .footer-second-col {
+    margin-top: 2rem;
+}
+/* Footer-second-col end */
+/* Footer-third-col */
+.main-footer .footer-third-col {
+    margin-top: 2rem;
+}
+/* Footer-third-col end */
+/* Footer-forth-col */
+.main-footer .footer-forth-col {
+    margin-top: 5.2rem;
+}
+
+/* Footer-forth-col end */
+/* Footer-fifth-col */
+.main-footer .footer-fifth-col {
+    margin-top: 5rem;
+}
+
+.main-footer .footer-fifth-col ul {
+    padding: 0 !important;
+}
+
+.main-footer .footer-fifth-col .sec-1, .main-footer .footer-fifth-col .sec-2 {
+    border-left: none;
+}
+/* Footer-fifth-col end */

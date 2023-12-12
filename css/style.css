@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato&family=Montserrat:wght@400;500;700;800;900&family=Pacifico&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+/* Helper classes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* Navbar start */
+
+/* Brandi-logo */
+#bg-color {
+    background-color: #0c29216a;
+    position: fixed;
+    padding: 0 6rem;
+    margin: 0 !important;
+    z-index: 999;
+}
+
+.logo-1 h4 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.main-nav .brandi-logo .logo-2 .para-1 {
+    color: #0c97d2;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 20px !important;
+}
+
+.main-nav .brandi-logo .logo-2 p{
+    opacity: .5;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.main-nav .brandi-logo .logo-3 li {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 0 15px; 
+}
+
+.main-nav .brandi-logo .logo-3 a {
+    color: #fff;
+    position: relative;
+    padding-top: 24px;
+}
+
+.main-nav .brandi-logo .logo-3 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00c4fa;
+    width: 0;
+    height: 2px;
+    transition: .4s;
+}
+
+.main-nav .brandi-logo .logo-3 li:hover a::before {
+    width: 100%;
+}
+/* Hamburger start */
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    display: none;
+    z-index: 999;
+}
+.hamburger .bar1, .hamburger .bar2, .hamburger .bar3 {
+    background-color: #fff;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.animateBar1 {
+    animation: flipBar1 .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+    animation: fadeBar2 .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+    animation: flipBar3 .5s;
+    animation-fill-mode: forwards;
+}
+/* Mobile Nav start */
+.mobilenav {
+    background-color: #0c29216a;
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    padding: 16px 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -160px;
+    transition: transform 0.5s;
+}
+
+.openDarwer {
+    transform: translate(-160px);
+}
+
+.main-nav .brandi-logo .mobilenav a {
+    color: #fff;
+    position: relative;
+    padding-top: 24px;
+}
+
+.main-nav .brandi-logo .mobilenav li {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 0 15px; 
+}
+
+.main-nav .brandi-logo .mobilenav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00c4fa;
+    width: 0;
+    height: 2px;
+    transition: .4s;
+}
+
+.main-nav .brandi-logo .mobilenav li:hover a::before {
+    width: 100%;
+}
+
+/* Keyframes for menu start */
+
+@keyframes flipBar1 {
+    form {
+       transform: rotate(0)
+    }
+    to {
+       transform: rotate(45deg) translate(4px, 6px)
+    }
+}
+
+@keyframes fadeBar2 {
+    form {
+       transform: scale(1)
+    }
+    to {
+       transform: scale(0)
+    }
+}
+
+@keyframes flipBar3 {
+    form {
+       transform: rotate(0)
+    }
+    to {
+       transform: rotate(-45deg) translate(4px, -6px)
+    }
+}
+
+/* Keyframes for menu end */
+/* Brandi-logo end */
+/* Owl Carousel start */
+.owl-1 .owl-carousel .owl-theme .owl-loaded {
+    z-index: 5;
+}
+
+.owl-1 .owl-carousel .owl-item img {
+    height: 100vh !important;
+}
+
+.owl-1 .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.owl-1 .owl-theme .owl-dots .owl-dot.active span {
+    background: #fff;
+}
+
+.owl-1 .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0dbb81;
+}
+/* Owl Carousel end */
+/* Meet brandi */
+/* Meet start */
+.main-meet {
+    /* padding-top: 15.5rem !important; */
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 99;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.main-meet .container .meet p {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 0 !important;
+    color: #fff;
+}
+
+.main-meet .container .meet h1 {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+    color: #fff;
+}
+/* Meet end */
+/* creative start */
+.main-meet .container .creative p {
+    color: #0dbb81;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.main-meet .container .creative h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+/* creative end */
+/* we start */
+
+.main-meet .container .we p {
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.main-meet .container .we p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    background-color: #0dbb81;
+    width: 2rem;
+    height: 1px;
+}
+
+.main-meet .container .we p::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    background-color: #0dbb81;
+    width: 2rem;
+    height: 1px;
+}
+/* we end */
+/* icon start */
+.main-meet .container .icon i {
+   color: #fff;
+   opacity: .5;
+   padding: 0 5px;
+   font-size: 18px;
+   margin-top: 2.5rem;
+}
+
+.main-meet .container .icon i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/* icon end */
+
+/* Navbar end */
+/* Fratures part-1 */
+.main-features {
+    background-color: #f4f7f9;
+}
+
+.main-features .container .f-part-1 h2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0eb493;
+}
+
+.main-features .container .f-part-1 .feature-hicon{
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.main-features .container .f-part-1 .feature-hicon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-features .container .f-part-1 .feature-hicon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-features .container .f-part-1 .feature-hicon i {
+    opacity: .4;
+}
+
+/* Fratures part-1 end */
+/* Fratures part-2 */
+/* col start */
+.main-features .container .f-part-2 .custom-col a {
+    display: inline-block;
+}
+
+.main-features .container .f-part-2 .custom-col a i {
+    width: 3rem;
+    height: 3rem;
+    border: #0eb493 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0eb493;
+    transition: .5s;
+}
+
+.main-features .container .f-part-2 .custom-col a i:hover {
+    background-color: #0eb493;
+    color: #fff;
+}
+
+.main-features .container .f-part-2 .custom-col h3 {
+    display: inline-block;
+    margin-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main-features .container .f-part-2 .custom-col p {
+    margin-left: 3.7rem;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    font-size: 13px;
+}
+/* col end */
+/* Fratures part-2 end */
+
+/* Works start */
+.main-works {
+    margin-top: 3rem;
+}
+
+.main-works h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0eb493;
+}
+
+.main-works .container .work-hicon {
+    position: relative;
+}
+
+.main-works .container .work-hicon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-works .container .work-hicon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-works .container .work-hicon i {
+    opacity: .4;
+}
+
+.main-works .para-1 p {
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.main-works .li li {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-works .li a {
+    color: #000;
+    font-weight: 700;
+    padding: 5px 20px;
+}
+
+.main-works a:hover {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #0eb493;
+}
+/* Main-grid start */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-grid .grid-item {
+    position: relative;
+}
+
+.main-grid .grid-item .grid-image {
+    width: 100%;
+    height: 100%;
+}
+
+.main-grid .grid-item .grid-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-grid .grid-item .grid-image-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0eb493c0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.main-grid .grid-item .grid-image-hover i {
+    border: #fff 1px solid;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.grid-item:hover .grid-image-hover {
+    opacity: 1;
+    visibility: visible;
+}
+/* Main-grid end */
+/* Works end */
+/* Meet team start */
+#meet-team {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem;
+}
+
+#meet-team .container .meet-team-hicon {
+    position: relative;
+}
+
+#meet-team .container .meet-team-hicon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+#meet-team .container .meet-team-hicon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+#meet-team .container .meet-team-hicon i {
+    opacity: .4;
+}
+
+#meet-team p {
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+}
+/* Meet team end */
+/* meet img-section */
+.meet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.meet-grid .meet-item {
+    position: relative;
+}
+
+.meet-grid .meet-item .meet-grid-hover {
+    position: absolute;
+    top: 0;
+    background-color: #0eb493c0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.meet-grid .meet-item:hover .meet-grid-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.meet-grid .meet-item .meet-grid-hover i {
+    border: 1px solid #00000011 ;
+    padding: 10px;
+    background-color: #00000067;
+    margin: 3.5rem 0 5px 5px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.meet-grid .meet-item .meet-grid-hover h5, .meet-grid .meet-item .meet-grid-hover p {
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.meet-all-item .meet-tittle h5 {
+    font-size: 18px;
+    color: #0eb493;
+}
+
+.meet-all-item .meet-tittle p {
+    font-size: 12px;
+    opacity: .7;
+}
+/* meet img-section */
+/* Some Fun Facts */
+.main-fun {
+    background-image: url(../images/Layer\ 29.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+#fun h2 {
+    font-size: 28px;
+    padding-top: 4.5rem;
+}
+
+.main-fun .container .fun-hicon {
+    position: relative;
+}
+
+.main-fun .container .fun-hicon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-fun .container .fun-hicon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 5rem;
+    height: 1px;
+}
+
+.main-fun .container .fun-hicon i {
+    color: #fff;
+    opacity: .4;
+}
+
+#fun-2 {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+#fun-2 .fun-col i {
+    font-size: 2rem;
+    font-weight: normal;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all .5s;
+}
+
+#fun-2 .fun-col i:hover {
+    background-color: #0eb493c0;
+}
+
+#fun-2 .fun-col span {
+    font-size: 3.5rem;
+    /* margin-top: 2.5rem !important; */
+    margin-bottom: 0 !important;
+}
+
+#fun-2 .fun-col p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* #fun-2 .fun-col img {
+    font-weight: normal;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all .5s;
+}
+
+#fun-2 .fun-col img:hover {
+    background-color: #0eb493c0;
+} */
+
+/* Some Fun Facts end */
+/* Discuss start */
+#discuss {
+    padding: 0 !important;
+    margin-top: 5rem !important;
+}
+
+#discuss h2 {
+    font-size: 27px;
+}
+
+#discuss .container .discuss-hicon {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#discuss .container .discuss-hicon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+    z-index: 555;
+}
+
+#discuss .container .discuss-hicon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+    background-color: #00000026;
+    width: 5rem;
+    height: 1px;
+}
+
+#discuss .container .discuss-hicon i {
+    opacity: .4;
+}
+
+#discuss p {
+    margin-bottom: 3rem;
+}
+/* Discuss end */
+/* Discuss-part-2 start */
+.discuss-part-2 h5 {
+    margin-bottom: 3rem;
+    font-size: 23px;
+}
+
+.discuss-part-2 p {
+    font-size: 13px;
+    width: 70%;
+    opacity: .6;
+}
+
+.discuss-part-2 h3 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.discuss-part-2 input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 49%;
+    padding-bottom: 10px;
+    margin-bottom: 3rem;
+    opacity: .5;
+}
+
+.discuss-part-2 .textarea textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    opacity: .5;
+}
+
+.discuss-part-2 button {
+    border: none;
+    padding: 0 !important;
+    text-align: end;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.discuss-part-2 .message i {
+    display: inline-block !important;
+    color: #1ea78d;
+    font-size: 20px;
+}
+
+.discuss-part-2 .discuss-2-icon i {
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    opacity: .5;
+    transition: .4s;
+}
+
+.discuss-part-2 .discuss-2-icon i:hover {
+    opacity: 1;
+}
+/* Discuss-part-2 end */
+/* Map start */
+.map {
+    width: 100%;
+    height: 250px;
+}
+
+.map iframe {
+    padding-bottom: 5px;
+    background-color: #000;
+}
+/* Map end */
+/* Footer srat */
+/* Footer-first-col */
+.main-footer {
+    background-color: #1ea78d;
+    height: 50vh;
+}
+
+.main-footer .footer-first-col {
+    color: #fff;
+    margin-top: 4rem;
+}
+
+.main-footer .footer-first-col p {
+    margin-top: 2rem;
+    font-size: 13px;
+}
+/* Footer-first-col end */
+/* Footer-second-col */
+.main-footer .footer-second-col {
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.main-footer .footer-second-col h5 {
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.main-footer .footer-second-col .f-s-c-input input {
+    width: 95%;
+    height: 2.3rem;
+    opacity: .7;
+    background-color: #1ea78d;
+    margin-bottom: 1.5rem;
+    border-color: #fff;
+}
+
+.main-footer .footer-second-col .f-s-c-input i {
+    position: absolute;
+    left: 46%;
+    padding-top: 10px;
+}
+
+.main-footer .footer-second-col p {
+    font-size: 11px;
+    width: 80%;
+}
+/* Footer-second-col end */
+/* Footer-third-col */
+.main-footer .footer-third-col {
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.main-footer .footer-third-col h5 {
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.main-footer .footer-third-col p {
+    font-size: 12px;
+    margin-bottom: .5rem !important;
+}
+/* Footer-third-col end */
+/* Footer-forth-col */
+.main-footer .footer-forth-col {
+    color: #fff;
+    margin-top: 8.2rem;
+}
+
+.main-footer .footer-forth-col p {
+    font-size: 12px;
+    margin-bottom: .5rem !important;
+}
+/* Footer-forth-col end */
+/* Footer-fifth-col */
+.main-footer .footer-fifth-col {
+    margin-top: 8rem;
+}
+
+.main-footer .footer-fifth-col .sec-1, .main-footer .footer-fifth-col .sec-2 {
+    border-left: 1px solid rgba(0, 0, 0, 0.312);
+    padding-left: .7rem;
+}
+
+.main-footer .footer-fifth-col .para-1 {
+    color: #fff;
+}
+
+.main-footer .footer-fifth-col p {
+    font-size: 12px;
+}
+
+.main-footer .footer-fifth-col .sec-1 li {
+    display: inline-block;
+    padding-bottom: 0 !important;
+}
+
+.main-footer .footer-fifth-col .sec-1 li p {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.main-footer .footer-fifth-col .sec-2 li {
+    margin-bottom: 2.5rem;
+}
+
+.main-footer .footer-fifth-col .sec-3 {
+    padding-left: .7rem;
+}
+/* Footer-fifth-col end */
+/* Footer end */
+/* Media 621px part satrt */
+@media only screen and (max-width: 637px) {
+        .main-meet .container .meet p {
+            font-size: 1.2rem !important;
+        }
+        .main-meet .container .meet h1 {
+            font-size: 1.2rem !important;
+        }
+    
+        .main-meet .container .creative p {
+            font-size: 1rem !important;
+        }
+        
+        .main-meet .container .creative h3 {
+            font-size: 1rem !important;
+        }
+    
+        .main-meet .container .we p {
+            font-size: .5rem !important;
+        }
+
+        .main-meet .container .we p::after {
+            width: 1rem !important;
+            left: 5% !important;
+        }
+        
+        .main-meet .container .we p::before {
+            width: 1rem !important;
+            right: 5% !important;
+        }
+
+        .main-works .li li {
+            display: inline-block;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .main-works .li a {
+            padding: 3px 10px !important;
+            font-size: 12px !important;
+        }
+
+        #fun-2 .fun-col img {
+            width: 25%;
+            padding: 1.2rem;
+        }
+}
+/* Media 621px part end */
+/* Media 991px part satrt */
+@media only screen and (max-width: 991px) {
+    .main-grid .grid-item .grid-image-hover h5 {
+        font-size: 15px;
+    }
+    #fun-2 .fun-col span {
+        font-size: 2rem;
+        margin-bottom: 0 !important;
+    }
+    
+    #fun-2 .fun-col p {
+        font-size: 1rem;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+}
+/* Media 991px part end */
+@media only screen and (max-width: 991px) {
+    .main-meet .container .meet p {
+        font-size: 2rem;
+    }
+    .main-meet .container .meet h1 {
+        font-size: 2rem;
+    }
+
+    .main-meet .container .creative p {
+        font-size: 1.7rem;
+    }
+    
+    .main-meet .container .creative h3 {
+        font-size: 1.7rem;
+    }
+
+    .main-meet .container .we p {
+        font-size: 1rem;
+    }
+}
+/* Media 1120px part satrt */
+@media only screen and (max-width: 1120px) {
+    .hamburger {
+        display: block;
+    }
+    .main-nav .brandi-logo .logo-3 {
+        display: none;
+    }
+}
+/* Media 1120px part end */
+/* Media 1200px part satrt */
+@media only screen and (max-width: 1200px) {
+    .meet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .main-footer {
+        height: 60vh;
+    }
+}
+/* Media 1200px part end */
+/* Media 1300px part satrt */
+@media only screen and (max-width: 1300px) {
+    .main-nav .brandi-logo .logo-2 .para-1 {
+        display: none;
+    }
+    
+    .main-nav .brandi-logo .logo-2 p{
+        display: none;
+    }
+
+    .main-meet .container .meet p {
+        font-size: 2rem;
+    }
+    .main-meet .container .meet h1 {
+        font-size: 2rem;
+    }
+
+    .main-meet .container .creative p {
+        font-size: 1.7rem;
+    }
+    
+    .main-meet .container .creative h3 {
+        font-size: 1.7rem;
+    }
+
+    .main-meet .container .we p {
+        font-size: 1rem;
+    }
+    
+    .main-meet .container .we p::after {
+        left: 0;
+        width: 2rem;
+    }
+    
+    .main-meet .container .we p::before {
+        right: 0;
+    }
+}
+/* Media 1300px part end */
